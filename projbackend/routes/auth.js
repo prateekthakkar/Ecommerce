@@ -20,8 +20,4 @@ router.post("/signin", [
 
 router.get("/signout", signout);
 
-router.get("/testroute", isSignedIn, (req, res) => {
-    res.send("Must Be Loggedin First Fuckker");
-});
-
 module.exports = router;
